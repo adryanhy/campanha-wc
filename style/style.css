@@ -166,4 +166,32 @@ td.pw3 {
         width: 170%;
         margin-top: 50%;
     }
+
+    #como-participar{
+        background-image: url(/images/Sessao_2_bg_2-mobile.png);
+        height: fit-content !important;
+        background-repeat: no-repeat;
+        padding-top: 29%;
+        background-size: auto;
+    }
+
+    .card{
+        width: 15rem !important;
+        justify-content: center;
+        margin-left: 80px;
+        padding-top: 0%;
+        padding-bottom: 10%;
+        height: fit-content !important;
+        margin-top: 10%;
+        padding-bottom: 50px;
+        }
+
+    #title-como{
+        margin-left: 80px;
+    }
+
+    #ganhador p{
+        font-size: 28px !important;
+        margin-top: 50% !important;
+    }
 }
