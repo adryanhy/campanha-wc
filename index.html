@@ -8,29 +8,43 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script type="text/javascript" src="/js/Winwheel.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript" src="/js/Winwheel.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 </head>
 
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white"
+            style="background-image: radial-gradient(circle at 20.12% 114.09%, #791a09 0, #700000 50%, #670000 100%);">
             <div class="container-fluid">
-                <img src="" alt="">
+                <div class="" id="img-logo" href="/">
+                    <img src="/images/Ativo 1.png" alt="" href="/">
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/"
+                                style="color: #eee; font-size: 20px; font-weight: 600;">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Features</a>
+                            <a class="nav-link active" href="/#como-participar"
+                                style="color: #eee; font-size: 20px; font-weight: 600;">Como Participar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Pricing</a>
+                            <a class="nav-link active" href="/#premios"
+                                style="color: #eee; font-size: 20px; font-weight: 600;">Prêmios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#ganhador"
+                                style="color: #eee; font-size: 20px; font-weight: 600;">Ganhadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/#faq"
+                                style="color: #eee; font-size: 20px; font-weight: 600;">Perguntas Frequentes</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +74,7 @@
                         <div class="card" style="width: 18rem; margin-right: 25px;">
                             <img class="card-img-top" src="/images/2/Agrupar 8.png" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text text-center" style="color: #000; font-size: 16px; font-weight: 700">
+                                <p class="card-text text-center" style="color: #000; font-size: 18px; font-weight: 700">
                                     Faça compras acima de
                                     mil reais em um Hipermercado WC</p>
                             </div>
@@ -68,7 +82,7 @@
                         <div class="card" style="width: 18rem; margin-right: 25px;">
                             <img class="card-img-top" src="/images/2/Agrupar 10.png" alt="Imagem de capa do card">
                             <div class="card-body">
-                                <p class="card-text text-center" style="color: #000; font-size: 16px; font-weight: 700">
+                                <p class="card-text text-center" style="color: #000; font-size: 18px; font-weight: 700">
                                     2 mil
                                     reais em vale compras sorteados todos os dias 06 (a partir de Setembro).</p>
                             </div>
@@ -77,8 +91,10 @@
                             <img class="card-img-top" src="/images/2/Agrupar 11.png" alt="Imagem de capa do card">
                             <div class="card-body">
                                 <p class="card-text text-center"
-                                    style="color: #000; font-size: 16px; font-weight: 700;">Concorra a uma BMW X5 no
-                                    Natal</p>
+                                    style="color: #000; font-size: 18px; font-weight: 700;">
+                                    Concorra a uma <span style="font-size: 20px; font-style: italic;">BMW X5</span> no
+                                    Natal
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -92,10 +108,11 @@
                     <br><br><br><br><br>
                     <div class="col-7">
                         <h2 class="text-center" style="color: #eee; padding-top: 30px; margin-left: -250px;">BMW X5</h2>
-                        <img src="/images/3/Ativo 1.png" alt="" style="margin-top: 40px;">
+                        <img src="/images/3/Ativo 1.png" alt="" style="margin-top: 40px;" id="carro-zero">
                     </div>
                     <div class="col-5">
-                        <h2 class="text-center" style="color: #eee; padding-top: 20px; padding-right: 0px;">Prêmio instantâneo</h2>
+                        <h2 class="text-center" style="color: #eee; padding-top: 20px; padding-right: 0px;">Prêmio
+                            instantâneo</h2>
                         <table cellpadding="0" cellspacing="0" border="0">
                             <tr>
                                 <td>
@@ -107,7 +124,8 @@
                                                 <th align="center">Power</th>
                                             </tr>
                                             <tr>
-                                                <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
+                                                <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
@@ -117,9 +135,11 @@
                                             </tr>
                                         </table>
                                         <br />
-                                        <img id="spin_button" src="/images/spin_off.png" alt="Spin" onClick="startSpin();" />
+                                        <img id="spin_button" src="/images/spin_off.png" alt="Spin"
+                                            onClick="startSpin();" />
                                         <br /><br />
-                                        &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;"></a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;<a href="#"
+                                            onClick="resetWheel(); return false;"></a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     </div>
                                 </td>
                                 <td width="438" height="582" class="the_wheel" align="center" valign="center">
@@ -134,36 +154,35 @@
         <script>
             // Create new wheel object specifying the parameters at creation time.
             let theWheel = new Winwheel({
-                'numSegments'  : 6,     // Specify number of segments.
-                'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
-                'textFontSize' : 20,    // Set font size as desired.
-                'segments'     :        // Define segments including colour and text.
-                [
-                   {'fillStyle' : '#c32225', 'text' : '2 mil reais'},
-                   {'fillStyle' : '#a51b0b', 'text' : 'Não foi dessa vez'},
-                   {'fillStyle' : '#ff9e81', 'text' : '2 mil reais'},
-                   {'fillStyle' : '#c32225', 'text' : 'Não foi dessa vez'},
-                   {'fillStyle' : '#ff9e81', 'text' : '2 mil reais'},
-                   {'fillStyle' : '#a51b0b', 'text' : 'Não foi dessa vez'},
-                ],
-                'animation' :           // Specify the animation to use.
+                'numSegments': 6,     // Specify number of segments.
+                'outerRadius': 212,   // Set outer radius so wheel fits inside the background.
+                'textFontSize': 20,    // Set font size as desired.
+                'segments':        // Define segments including colour and text.
+                    [
+                        { 'fillStyle': '#c32225', 'text': '2 mil reais' },
+                        { 'fillStyle': '#a51b0b', 'text': 'Não foi dessa vez' },
+                        { 'fillStyle': '#ff9e81', 'text': '2 mil reais' },
+                        { 'fillStyle': '#c32225', 'text': 'Não foi dessa vez' },
+                        { 'fillStyle': '#ff9e81', 'text': '2 mil reais' },
+                        { 'fillStyle': '#a51b0b', 'text': 'Não foi dessa vez' },
+                    ],
+                'animation':           // Specify the animation to use.
                 {
-                    'type'     : 'spinToStop',
-                    'duration' : 5,     // Duration in seconds.
-                    'spins'    : 8,     // Number of complete spins.
-                    'callbackFinished' : alertPrize
+                    'type': 'spinToStop',
+                    'duration': 5,     // Duration in seconds.
+                    'spins': 8,     // Number of complete spins.
+                    'callbackFinished': alertPrize
                 }
             });
 
             // Vars used by the code in this page to do power controls.
-            let wheelPower    = 0;
+            let wheelPower = 0;
             let wheelSpinning = false;
 
             // -------------------------------------------------------
             // Function to handle the onClick on the power buttons.
             // -------------------------------------------------------
-            function powerSelected(powerLevel)
-            {
+            function powerSelected(powerLevel) {
                 // Ensure that power can't be changed while wheel is spinning.
                 if (wheelSpinning == false) {
                     // Reset all to grey incase this is not the first time the user has selected the power.
@@ -196,8 +215,7 @@
             // -------------------------------------------------------
             // Click handler for spin button.
             // -------------------------------------------------------
-            function startSpin()
-            {
+            function startSpin() {
                 // Ensure that spinning can't be clicked again while already running.
                 if (wheelSpinning == false) {
                     // Based on the power level selected adjust the number of spins for the wheel, the more times is has
@@ -211,7 +229,7 @@
                     }
 
                     // Disable the spin button so can't click again while wheel is spinning.
-                    document.getElementById('spin_button').src       = "spin_off.png";
+                    document.getElementById('spin_button').src = "spin_off.png";
                     document.getElementById('spin_button').className = "";
 
                     // Begin the spin animation by calling startAnimation on the wheel object.
@@ -226,8 +244,7 @@
             // -------------------------------------------------------
             // Function for reset button.
             // -------------------------------------------------------
-            function resetWheel()
-            {
+            function resetWheel() {
                 theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
                 theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
                 theWheel.draw();                // Call draw to render changes to the wheel.
@@ -243,14 +260,50 @@
             // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters
             // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
             // -------------------------------------------------------
-            function alertPrize(indicatedSegment)
-            {
+            function alertPrize(indicatedSegment) {
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
                 alert("Você ganhou " + indicatedSegment.text);
-                
+
             }
         </script>
         <!--ROLETA-->
+        <section id="ganhador">
+            <div class="container">
+                <div class="row">
+                    <p style="font-size: 48px; padding-right: 550px; margin-top: 25%;">Aguarde até a data do sorteio de uma <span style="font-style: italic; font-weight: 800;">BMW X5</span> que acontecerá no dia 25/12</p>
+                    <script>
+                        // Defina a data-alvo da contagem regressiva (formato: "mês dia, ano hora:minuto:segundo")
+                        var dataAlvo = new Date("Aug 31, 2023 00:00:00").getTime();
+
+                        // Atualize a contagem regressiva a cada segundo
+                        var x = setInterval(function () {
+
+                            // Obtenha a data e hora atual
+                            var agora = new Date().getTime();
+
+                            // Calcule a diferença entre a data-alvo e a data atual
+                            var diferenca = dataAlvo - agora;
+
+                            // Calcule os dias, horas, minutos e segundos restantes
+                            var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                            var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                            var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+                            // Exiba a contagem regressiva na página
+                            document.getElementById("countdown").innerHTML = dias + "d " + horas + "h "
+                                + minutos + "m " + segundos + "s ";
+
+                            // Se a contagem regressiva terminar, exiba uma mensagem
+                            if (diferenca < 0) {
+                                clearInterval(x);
+                                document.getElementById("countdown").innerHTML = "A contagem regressiva terminou!";
+                            }
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+        </section>
         <section id="faq">
             <div class="container">
                 <h2 class="text-center p-5" style="color: #eee; font-size: 36px;">Perguntas frequentes</h2>
@@ -309,17 +362,22 @@
         </section>
 
         <!--Footer-->
-        <div class="container">
-            <footer class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Política de
-                            Privacidade</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Termos de Uso</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Regulamento</a></li>
-                </ul>
-                <p class="text-center text-white">&copy; 2023 Company, Inc</p>
-            </footer>
-        </div>
+        <section id="footer">
+            <div class="container">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                                style="font-size: 22px;">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                                style="font-size: 22px;">Termos de Uso</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-white"
+                                style="font-size: 22px;">Regulamento</a></li>
+                    </ul>
+                    <p class="text-center text-white">&copy; 2023 Company, Inc</p>
+                </footer>
+            </div>
+        </section>
     </main>
 </body>
 

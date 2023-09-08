@@ -1,100 +1,157 @@
-html, body {
-    background-image: linear-gradient(10deg, #c42549 0, #bb1e48 50%, #b21747 100%);
+html,
+body {
+    background-image: radial-gradient(circle at 20.12% 114.09%, #791a09 0, #700000 50%, #670000 100%);
     margin: 0;
     padding: 0;
 }
 
-#home{
+#home {
     background-image: url(/images/1/BG.png);
     height: 1080px;
 }
 
-#logo-campanha{
+li.nav-item {
+    padding: 25px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-left: -190px;
+}
+
+
+.nav-item a {
+    color: #eee;
+}
+
+#img-logo {
+    width: 10%;
+    margin-left: 10%;
+}
+
+#img-logo img {
+    width: 80%;
+}
+
+#logo-campanha {
     margin-top: 8%;
 }
 
-#faq{
+#footer {
+    /* background-image: radial-gradient(circle at 20.12% 114.09%, #791a09 0, #700000 50%, #670000 100%); */
+}
+
+#faq {
     background-image: url(/images/BG\ vermelho.png);
     height: 600px;
 }
 
-#como-participar{
+#como-participar {
     background-image: url(/images/2/BG-como.png);
 }
 
-#premios{
+#premios {
     background-image: url(/images/BG\ vermelho.png);
 }
 
-#custom-cards{
+#ganhador {
+    background-image: url(/images/4/Sessão\ 4.png);
+    height: 1080px;
+}
+
+#custom-cards {
     padding-top: 15%;
 }
 
-#title-como{
+#title-como {
     margin-top: 0px;
 }
 
-.card-img, .card-img-bottom, .card-img-top {
+.card-img,
+.card-img-bottom,
+.card-img-top {
     width: 100%;
     padding: 20px;
 }
 
 /*ROLETINHA*/
-td.the_wheel
-{
+td.the_wheel {
     background-image: url(/images/wheel_back.png);
     background-position: center;
     background-repeat: none;
 }
 
 /* Do some css reset on selected elements */
-div.power_controls
-{
-    margin-right:70px;
+div.power_controls {
+    margin-right: 70px;
 }
 
-div.html5_logo
-{
-    margin-left:70px;
+div.html5_logo {
+    margin-left: 70px;
 }
 
 /* Styles for the power selection controls */
-table.power
-{
+table.power {
     background-color: #cccccc;
     cursor: pointer;
-    border:1px solid #333333;
+    border: 1px solid #333333;
 }
 
-table.power th
-{
+table.power th {
     background-color: white;
     cursor: default;
 }
 
-td.pw1
-{
+td.pw1 {
     background-color: #6fe8f0;
 }
 
-td.pw2
-{
+td.pw2 {
     background-color: #86ef6f;
 }
 
-td.pw3
-{
+td.pw3 {
     background-color: #ef6f6f;
 }
 
 /* Style applied to the spin button once a power has been selected */
-.clickable
-{
+.clickable {
     cursor: pointer;
 }
 
 /* Other misc styles */
-.margin_bottom
-{
+.margin_bottom {
     margin-bottom: 5px;
+}
+
+
+@media (max-width: 1366px) and (min-width: 768px) {
+    #home {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 735px;
+    }
+
+    li.nav-item {
+        padding: 15px;
+    }
+
+    #logo-campanha img{
+        width: 90%;
+    }
+
+    #como-participar{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 750px !important;
+    }
+
+    #carro-zero {
+        width: 90%;
+    }
+
+    #ganhador{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 750px;
+    }
 }
