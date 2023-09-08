@@ -75,9 +75,9 @@ li.nav-item {
 
 /*ROLETINHA*/
 td.the_wheel {
-    background-image: url(/images/wheel_back.png);
+    background-image: url(/images/roleta.png);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 /* Do some css reset on selected elements */
@@ -153,5 +153,17 @@ td.pw3 {
         background-size: contain;
         background-repeat: no-repeat;
         height: 750px;
+    }
+}
+
+@media (max-width: 768px){
+    #home{
+        background-image: url(/images/Sessao_1_bg-mobile.png);
+        height: 800px;
+    }
+
+    #logo-campanha img{
+        width: 170%;
+        margin-top: 50%;
     }
 }

@@ -270,34 +270,40 @@
         <section id="ganhador">
             <div class="container">
                 <div class="row">
-                    <p style="font-size: 48px; padding-right: 550px; margin-top: 25%;">Aguarde até a data do sorteio de uma <span style="font-style: italic; font-weight: 800;">BMW X5</span> que acontecerá no dia 25/12</p>
-                    <script>
-                        // Defina a data-alvo da contagem regressiva (formato: "mês dia, ano hora:minuto:segundo")
-                        var dataAlvo = new Date("Aug 31, 2023 00:00:00").getTime();
+                    <p style="font-size: 48px; padding-right: 550px; margin-top: 25%;">Aguarde até a data do sorteio de
+                        uma <span style="font-style: italic; font-weight: 800;">BMW X5</span> que acontecerá no dia
+                        25/12</p>
+                    <!-- Display the countdown timer in an element -->
+                    <h2 style="margin-top: 60px;">Contagem regressiva do sorteio: </h3>
+                    <p id="demo" style="font-size: 46px; margin-top: 0px; font-weight: 800;"></p>
 
-                        // Atualize a contagem regressiva a cada segundo
+                    <script>
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+
+                        // Update the count down every 1 second
                         var x = setInterval(function () {
 
-                            // Obtenha a data e hora atual
-                            var agora = new Date().getTime();
+                            // Get today's date and time
+                            var now = new Date().getTime();
 
-                            // Calcule a diferença entre a data-alvo e a data atual
-                            var diferenca = dataAlvo - agora;
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
 
-                            // Calcule os dias, horas, minutos e segundos restantes
-                            var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-                            var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-                            var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                            // Exiba a contagem regressiva na página
-                            document.getElementById("countdown").innerHTML = dias + "d " + horas + "h "
-                                + minutos + "m " + segundos + "s ";
+                            // Display the result in the element with id="demo"
+                            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                + minutes + "m " + seconds + "s ";
 
-                            // Se a contagem regressiva terminar, exiba uma mensagem
-                            if (diferenca < 0) {
+                            // If the count down is finished, write some text
+                            if (distance < 0) {
                                 clearInterval(x);
-                                document.getElementById("countdown").innerHTML = "A contagem regressiva terminou!";
+                                document.getElementById("demo").innerHTML = "EXPIRED";
                             }
                         }, 1000);
                     </script>
